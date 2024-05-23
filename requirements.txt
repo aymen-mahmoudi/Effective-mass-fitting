@@ -1,0 +1,9 @@
+pyqt5
+pyqt5-tools
+numpy
+scipy
+matplotlib==3.3.1
+pandas
+seaborn
+opencv-python
+jupyter
