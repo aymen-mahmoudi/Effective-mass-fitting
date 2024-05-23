@@ -5,11 +5,13 @@
 This project allows to estimate the effeective mass of a an elecronic band by fitting this latter with a parabolic shape.
 <br>  
 For the bands near to the Fermi level the disperion relation can be considered as :
-$$ \frac{1}{2m^{*}} = \frac{1}{\hbar^{2}} \frac{\mathrm{d} E }{\mathrm{d} k^{2}}  $$
-<span style="white-space: pre-line"></span>
-$$E(k) \propto c\times k^{2} $$</span>
-Knowing the concavity of the parabola, the effective mass can be calculated via : </span>
-$$ m^{*} = \frac{\hbar^{2}}{2c} $$
+$$\frac{1}{2m^{*}} = \frac{1}{\hbar^{2}} \frac{\mathrm{d} E }{\mathrm{d} k^{2}}$$
+$$E(k) \propto c\times k^{2}$$
+
+Knowing the concavity of the parabola, the effective mass can be calculated via : 
+$$m^{*} = \frac{\hbar^{2}}{2c}$$
+
+
 
 ## Usage
 You need to provide an image with the ARPES 2D scan to be opened via the browsing buton. Then, you can fit the parabola with the wanted band. The effective mass value is updating via the update buton.
