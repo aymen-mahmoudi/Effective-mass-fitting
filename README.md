@@ -2,9 +2,9 @@
 
 
 ## Description
-This project allows to estimate the effeective mass of a an elecronic band by fitting this latter with a parabolic shape.
+This project allows the estimation of the effective mass of an electronic band by fitting this latter with a parabolic shape.
 <br>  
-For the bands near to the Fermi level the disperion relation can be considered as :
+For the bands near the Fermi level, the dispersion relation can be considered as :
 $$\frac{1}{2m^{*}} = \frac{1}{\hbar^{2}} \frac{\mathrm{d} E }{\mathrm{d} k^{2}}$$
 $$E(k) \propto c\times k^{2}$$
 
