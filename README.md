@@ -5,7 +5,13 @@
 This project allows the estimation of the effective mass of an electronic band by fitting this latter with a parabolic shape.
 <br>  
 For the bands near the Fermi level, the dispersion relation can be considered as :
+
 $$\frac{1}{2m^{*}} = \frac{1}{\hbar^{2}} \frac{\mathrm{d} E }{\mathrm{d} k^{2}}$$
+
+$\alpha_{R}$ is the Rashba parameter
+
+$$E(k)=\frac{\hbar^{2}}{2m^{*}}k^{2}\pm \alpha_{R}k$$
+
 $$E(k) \propto c\times k^{2}$$
 
 Knowing the concavity of the parabola, the effective mass can be calculated via : 
