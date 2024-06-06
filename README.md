@@ -17,8 +17,12 @@ $$E(k) \propto c\times k^{2}$$
 Knowing the concavity of the parabola, the effective mass can be calculated via : 
 $$m^{*} = \frac{\hbar^{2}}{2c}$$
 
+For a given temperature and density, the Seebeck coefficient is also calculated via the formula below:
+<br>
+<br>
+$$\frac{8\pi^{2}k_{B}^{2}}{3eh^{2}}mT\left[ \frac{\pi}{3n} \right]^{\frac{3}{2}}$$
 
-
+N.B: There is another project dedicated to the calculation of the Seebeck coefficient: https://github.com/aymen-mahmoudi/Seebeck-coefficient-calculator 
 ## Usage
 You need to provide an image with the ARPES 2D scan to be opened via the browsing buton. Then, you can fit the parabola with the wanted band. The effective mass value is updating via the update buton.
 
