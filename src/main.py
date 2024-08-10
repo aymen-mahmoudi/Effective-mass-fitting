@@ -88,14 +88,14 @@ class MainWindow(QWidget, ui):
         #ax.imshow(self.pic,extent=[2,3,44,35],aspect = 'auto')
         #ax.imshow(self.pic,extent = [self.kmin,22,4,self.Emax],aspect = 'auto')
 
-        x = np.linspace(self.curve_kmin,self.curve_kmax,100)
+        x = np.linspace(self.curve_center-self.curve_length,self.curve_center+self.curve_length,100)
         y = self.concavity*np.power((x-self.curve_center),2) + self.curve_E0
         concavity_converted = self.concavity * (1E-20)*(1.60218E-19)
         self.m = np.power(hbar,2)/(2*concavity_converted*m0)
         self.m=np.abs(self.m)
 
         print('verif', min(x),max(x))
-        print(type(self.curve_kmin))
+        print(type(self.curve_length))
 
         # Saving image settings :
 
@@ -147,7 +147,7 @@ class MainWindow(QWidget, ui):
 
         print ('essential values here')
         self.T = 0 ; self.E = 0 ; self.n = 0 ; self.kmin = 0 ; self.kmax = 0 ; self.Emin = 0 ; self.Emax = 0 ;  self.pic = 0 
-        self.curve_kmin = 0 ; self.curve_kmax =0 ;  self.curve_center = 0 ; self.concavity = 0 ; self.curve_E0 = 0 
+        self.curve_length =0 ;  self.curve_center = 0 ; self.concavity = 0 ; self.curve_E0 = 0 
         self.m = 0
         self.ls = ''
         self.lw = 0
@@ -169,8 +169,7 @@ class MainWindow(QWidget, ui):
         self.Emin = float(self.get_Emin())
         self.Emax = float(self.get_Emax())
 
-        self.curve_kmin = float(self.get_curve_kmin())
-        self.curve_kmax = float(self.get_curve_kmax())
+        self.curve_length = float(self.get_curve_length())
         self.concavity = float(self.get_concavity())
         self.curve_center = float(self.get_curve_center())
         self.curve_E0 = float(self.get_curve_E0())
@@ -215,13 +214,10 @@ class MainWindow(QWidget, ui):
         Emax = self.Emax_lineEdit.text()
         return Emax
 
-    def get_curve_kmax(self):
-        curve_kmax = self.curve_kmax_lineEdit.text()
-        return curve_kmax
+    def get_curve_length(self):
+        curve_length = self.curve_length_lineEdit.text()
+        return curve_length
 
-    def get_curve_kmin(self):
-        curve_kmin = self.curve_kmin_lineEdit.text()
-        return curve_kmin
 
     def get_curve_E0(self):
         curve_E0 = self.curve_E0_lineEdit.text()

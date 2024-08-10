@@ -2,31 +2,19 @@
 
 
 ## Description
-This project allows the estimation of the effective mass of an electronic band by fitting this latter with a parabolic shape.
+This project allows to estimate the effeective mass of a an elecronic band by fitting this latter with a parabolic shape.
 <br>  
-For the bands near the Fermi level, the dispersion relation can be considered as :
+For the bands near to the Fermi level the disperion relation can be considered as :
+$$ \frac{1}{2m^{*}} = \frac{1}{\hbar^{2}} \frac{\mathrm{d} E }{\mathrm{d} k^{2}}  $$
+<span style="white-space: pre-line"></span>
+$$E(k) \propto c\times k^{2} $$</span>
+Knowing the concavity of the parabola, the effective mass can be calculated via : </span>
+$$ m^{*} = \frac{\hbar^{2}}{2c} $$
 
-$$\frac{1}{2m^{*}} = \frac{1}{\hbar^{2}} \frac{\mathrm{d} E }{\mathrm{d} k^{2}}$$
-
-$\alpha_{R}$ is the Rashba parameter
-
-$$E(k)=\frac{\hbar^{2}}{2m^{*}}k^{2}\pm \alpha_{R}k$$
-
-$$E(k) \propto c\times k^{2}$$
-
-Knowing the concavity of the parabola, the effective mass can be calculated via : 
-$$m^{*} = \frac{\hbar^{2}}{2c}$$
-
-For a given temperature and density, the Seebeck coefficient is also calculated via the formula below:
-<br>
-<br>
-$$\frac{8\pi^{2}k_{B}^{2}}{3eh^{2}}mT\left[ \frac{\pi}{3n} \right]^{\frac{3}{2}}$$
-
-N.B: There is another project dedicated to the calculation of the Seebeck coefficient: https://github.com/aymen-mahmoudi/Seebeck-coefficient-calculator 
 ## Usage
 You need to provide an image with the ARPES 2D scan to be opened via the browsing buton. Then, you can fit the parabola with the wanted band. The effective mass value is updating via the update buton.
 
-<img src="./screenshot_app.png"
+<img src="./resources/gui_screenshot.jpg"
      alt="gui" width="600" height="450"
       style="float: center"/>
 
