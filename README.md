@@ -21,10 +21,11 @@ You need to provide an image with the ARPES 2D scan to be opened via the browsin
 
 
 ## Installation
-To use the app, you can download and directly execute the file mass.exe (just for Windows X64). Otherwise, you can run the main.py script which is available within the necessary resources. I recommend to setup a python 3.8 virtual environment and adding the required libraries using the following command after cloning the rep (you can just download the rep in case you don't use git):
+You can just run the main.py script available in the source folder within the resources you need. You have to add the required libraries using the following command after cloning (or downloading) the rep:
 ```console
 pip install -r requirements.txt
 ```
+The GUI is tested under a Python 3.8 version. (I recommend to setup a python 3.8 virtual environment).
 
 ## Roadmap
  <ul>
