@@ -43,7 +43,6 @@ class MainWindow(QWidget, ui):
         self.clickHere_pushButton.clicked.connect(self.plot)
         # output (set)
         self.clickHere_pushButton.clicked.connect(self.set_mass)
-        self.clickHere_pushButton.clicked.connect(self.set_seebeck)
         self.clickHere_pushButton.clicked.connect(self.set_path)
         # browsing buton
         self.browse_pushButton.clicked.connect(self.load_image)
@@ -73,8 +72,7 @@ class MainWindow(QWidget, ui):
 
     def plot(self):
         print('here ' , self.fileName[0])
-        print('nnnnn',self.n)
-        print('ttttt',self.T)
+        
         self.fig.clear()
         ax = self.fig.add_subplot(111, facecolor='green')
         ax.set_aspect('equal')
@@ -146,7 +144,7 @@ class MainWindow(QWidget, ui):
         # Global Varilables
 
         print ('essential values here')
-        self.T = 0 ; self.E = 0 ; self.n = 0 ; self.kmin = 0 ; self.kmax = 0 ; self.Emin = 0 ; self.Emax = 0 ;  self.pic = 0 
+        self.E = 0 ; self.kmin = 0 ; self.kmax = 0 ; self.Emin = 0 ; self.Emax = 0 ;  self.pic = 0 
         self.curve_length =0 ;  self.curve_center = 0 ; self.concavity = 0 ; self.curve_E0 = 0 
         self.m = 0
         self.ls = ''
@@ -158,9 +156,9 @@ class MainWindow(QWidget, ui):
 
 
         self.pic = plt.imread(self.fileName[0])
-        self.T = float(self.get_T())
+        
         self.E = float(self.get_E())
-        self.n = float(self.get_n())
+        
 
         print('hhhhhhhhhhhhhhh')
 
@@ -182,21 +180,11 @@ class MainWindow(QWidget, ui):
         
      
 
-       
-        
-
-    def get_T(self):
-        T = self.T_lineEdit.text()
-        return T
-
-
     def get_E(self):
         E = self.E_lineEdit.text()
         return E
     
-    def get_n(self):
-        n = self.n_lineEdit.text()
-        return n
+    
 
     def get_kmin(self):
         kmin = self.kmin_lineEdit.text()
