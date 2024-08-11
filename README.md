@@ -21,7 +21,7 @@ $$ m^{*} = \frac{\hbar^{2}}{2c} $$
 You need to provide an image with the ARPES 2D scan to be opened via the browsing button. Then, you can fit the parabola with the wanted band. The effective mass value is updated via the update button.
 
 <img src="screenshot_app.png"
-     alt="gui" width="600" height="450"
+     alt="gui" width="700" height="450"
       style="float: center"/>
 
 
